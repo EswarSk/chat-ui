@@ -285,7 +285,14 @@ MODELS=`[
         "prompt": "How do I make a delicious lemon cheesecake?"
       }
     ]
-  }
+  },
+{
+           "name": "My own endpoint", //model-name
+           "endpoints" : [{
+             "type": "langserve",
+             "url" : "http://127.0.0.1:8000",
+           }]
+    },
 ]`
 
 ```
